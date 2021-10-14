@@ -5,7 +5,7 @@ import manageTodo from './reducers/manageTodo';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-const store = createStore(manageTodo);
+let store = createStore(manageTodo);
 
 ReactDOM.render(
   <Provider store={store}>
